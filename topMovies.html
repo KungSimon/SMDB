@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/smdb.css">
+    <title>Top Movies</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="smdb.html">SMDB</a></h1>
+            <h5>Simons Movie Database</h5>
+            <button id="menuButton">Menu</button>
+        </div>
+    </header>
+    
+    <aside id="menuContent" class="hidden">
+      <ul>
+          <li><a href="addNewMovie.html">Add New Movie</a></li>
+          <li><a href="topMovies.html">Top Movies</a></li>
+      </ul>
+  </aside>
+    </header>
+    <h2>Top Movies</h2>
+    <br>
+    <main id="mainContent">
+        <div id="movieList"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simon Movie Database</p>
+    </footer>
+    <script src="scripts/topMovies.js" type="module" defer></script>
+    <script src="scripts/smdb.js"></script>
+    <script src="scripts/addNewMovie.js" defer></script>
+    <script src="scripts/Movie.js"></script>
+</body>
+</html>

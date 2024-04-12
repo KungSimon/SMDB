@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Movie</title>
+    <link rel="stylesheet" type="text/css" href="styles/smdb.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="smdb.html">SMDB</a></h1>
+            <h5>Simons Movie Database</h5>
+            <button id="menuButton">Menu</button>
+        </div>
+    </header>
+    
+    <aside id="menuContent" class="hidden">
+        <ul>
+            <li><a href="addNewMovie.html">Add New Movie</a></li>
+            <li><a href="topMovies.html">Top Movies</a></li>
+        </ul>
+    </aside>
+  
+    <main id="mainContent">
+      <h2>Add A New Movie</h2>
+      <form id="addMovieForm">
+          <div class="form-group">
+              <label for="movieName">Name:</label>
+              <input type="text" id="movieName" name="movieName" required>
+          </div>
+          <div class="form-group">
+              <label for="movieGenre">Genre:</label>
+              <input type="text" id="movieGenre" name="movieGenre" required>
+          </div>
+          <div class="form-group">
+              <label for="releaseDate">Release Date:</label>
+              <input type="date" id="releaseDate" name="releaseDate" required>
+          </div>
+          <div class="form-group">
+              <label for="director">Director:</label>
+              <input type="text" id="director" name="director" required>
+          </div>
+          <div class="form-group">
+              <label for="rating">Rating:</label> 
+              <label class="rating">
+                  <span class="star" data-value="5">☆</span>
+                  <span class="star" data-value="4">☆</span>
+                  <span class="star" data-value="3">☆</span>
+                  <span class="star" data-value="2">☆</span>
+                  <span class="star" data-value="1">☆</span>
+              </label>
+          </div>
+          <button type="button" onclick="addNewMovie()">Add Movie</button>
+      </form>
+  </main>
+
+    <footer>
+        <p>&copy; 2024 Simon Movie Database</p>
+    </footer>
+    <script src="scripts/smdb.js"></script>
+    <script src="scripts/addNewMovie.js" defer></script>
+    <script src="scripts/Movie.js"></script>
+</body>
+</html>
